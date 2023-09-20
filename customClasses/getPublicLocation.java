@@ -14,7 +14,7 @@ public class getPublicLocation {
 		path += source;
 	}
 	
-	public static String getPublicIPAddress() throws IOException{
+	public static String getPublicAddress() throws IOException{
 		URL url = new URL(path);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
